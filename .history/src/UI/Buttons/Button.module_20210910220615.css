@@ -1,0 +1,26 @@
+.Btn {
+    padding: 5px 10px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #27ccc0;
+    border-radius: 5px;
+    display:flex;
+    align-items:stretch;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.BtnDel {
+    padding: 2px 25px;
+    color: #fb718d;
+    font-size: 14px;
+    border: 2px solid #fb718d;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    display:flex;
+    align-items:stretch;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+.Btn {
+    padding: 5px 10px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #27ccc0;
+    border-radius: 5px;
+    display:flex;
+    align-items:stretch;
+    text-align: center;
+}
+.BtnDel {
+    padding: 4px 10px;
+    color: #ff2f5a;
+    font-size: 18px;
+    border: 2px solid #ff2f5a;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    display:flex;
+    align-items:stretch;
+    text-align: center;
+}
+
+/* .BtnCancel svg {
+    height: 1rem;
+    padding-right: 5px;
+    padding-bottom: 3px;
+} */

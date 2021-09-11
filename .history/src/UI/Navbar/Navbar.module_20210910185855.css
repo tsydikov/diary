@@ -1,0 +1,19 @@
+.container {
+    background: #2b2f3e;
+    height: 100vh;
+    padding: 20px;
+    width: initial;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    color:white;
+    font-size: 28px;
+    font-weight:200;
+}
+
+.container h3 {
+    color:grey;
+    font-size: 16px;
+    font-weight:200;
+}

@@ -1,0 +1,10 @@
+.container {
+    background: #2b2f3e;
+    height: 100vh;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    color:white;
+    font-size: 28px;
+}

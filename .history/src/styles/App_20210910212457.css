@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item_cotainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.item_cotainer span {
+    font-size: 10px;
+    color: white;
+    background-color: #27ccc0;
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 1px 8px;
+}
+
+hr {
+    margin: 2px 0;
+    background: lightgray;
+    /* background: tomato; */
+}
+
+.items_cotainer {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}

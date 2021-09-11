@@ -1,0 +1,17 @@
+.container {
+    background: #2b2f3e;
+    height: 100vh;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    color:white;
+    font-size: 28px;
+    font-weight:200;
+}
+
+.container h3 {
+    color:lightgray;
+    font-size: 18px;
+    font-weight:200;
+}
