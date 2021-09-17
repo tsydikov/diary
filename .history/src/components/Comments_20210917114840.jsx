@@ -5,14 +5,14 @@ const Comments = (props) => {
     const press = (e) => {
         if (e.keyCode === 13) {
             if (e.ctrlKey) {
-                props.create(comment, props.index)
+                props.create(comment,props.index)
                 setComment('')
             }
         }
     }
     return (
         <div className="comments_cotainer">
-            <h3 className="h3">Comments #{props.comments && props.index}</h3>
+            <h3 className="h3">Comments #{props.index}</h3>
             {props.comments && props.comments.map((com, index) =>
                 <div key={index}>
                     <div className="container px-3" >

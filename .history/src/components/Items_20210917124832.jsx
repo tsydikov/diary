@@ -1,7 +1,7 @@
 import React from 'react';
 import Item from './Item';
 
-const Items = ({ items, remove, showComments }) => {
+const Items = ({ items, remove, showComment }) => {
 
     return (
         <div>

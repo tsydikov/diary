@@ -13,6 +13,7 @@ function App() {
     { id: 3, title: 'Regular item', comments: [1, 2, 3] },
     { id: 4, title: 'Regular item', comments: [1, 2] },
   ])
+  console.log(items);
   const [comments, setComments] = useLocalStorage("comments", null)
   const [index, setIndex] = useLocalStorage("index", null)
 
@@ -21,17 +22,18 @@ function App() {
   }
   const removeItem = (item) => {
     setItems(items.filter(i => i.id !== item.id))
-    setComments('')
   }
-  const showComments = (index) => {
-    setComments(items[index - 1].comments)
+  const showComments = (item, index) => {
+    setComments(item.comments)
     setIndex(index)
   }
-  const createComment = (newComment, index) => {
-    items[index - 1].comments.push(newComment)
-    setItems([...items])
-    setComments(items[index - 1].comments)
-    showComments(index)
+  const createComment = (newComment,index) => {
+    // items[index-1].comments.push(newComment)
+    // setItems(items)
+    // setItems([...items[index-1].comments,newComment])
+    setItems([...items,items[index-1].comments.push(newComment)])
+    console.log(items);
+    
   }
 
   return (

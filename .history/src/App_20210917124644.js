@@ -23,15 +23,15 @@ function App() {
     setItems(items.filter(i => i.id !== item.id))
     setComments('')
   }
-  const showComments = (index) => {
-    setComments(items[index - 1].comments)
+  const showComments = (_item, index) => {
+    setComments(items[index-1].comments)
     setIndex(index)
   }
-  const createComment = (newComment, index) => {
-    items[index - 1].comments.push(newComment)
+  const createComment = (newComment,index) => {
+    items[index-1].comments.push(newComment)
     setItems([...items])
-    setComments(items[index - 1].comments)
-    showComments(index)
+    setComments(items[index-1].comments)
+    
   }
 
   return (
