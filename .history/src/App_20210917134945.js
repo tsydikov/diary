@@ -28,9 +28,13 @@ function App() {
     setIndex(index)
   }
   const createComment = (newComment, index) => {
-    items[index - 1].comments.push(newComment)
-    setItems([...items])
-    setComments([...items[index - 1].comments])
+    // items[index - 1].comments.push(newComment)
+    // setItems([...items])
+    console.log(items[index - 1].comments);
+    setComments([...comments,newComment])
+    console.log(comments);
+    // showComments(index)
+    console.log(index);
   }
 
   return (

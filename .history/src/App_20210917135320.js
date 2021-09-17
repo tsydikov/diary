@@ -30,7 +30,11 @@ function App() {
   const createComment = (newComment, index) => {
     items[index - 1].comments.push(newComment)
     setItems([...items])
-    setComments([...items[index - 1].comments])
+    console.log(items[index - 1].comments);
+    // setComments([...comments,newComment])
+    console.log(comments);
+    // showComments(index)
+    console.log(index);
   }
 
   return (
@@ -46,7 +50,7 @@ function App() {
           </div>
         </div>
         <div className="col-5">
-          <Comments comments={comments} create={createComment} index={index} />
+          <Comments comments={items[index - 1].comments} create={createComment} index={index} />
         </div>
       </div>
     </div>

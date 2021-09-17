@@ -31,6 +31,7 @@ function App() {
     items[index - 1].comments.push(newComment)
     setItems([...items])
     setComments([...items[index - 1].comments])
+    showComments(index)
   }
 
   return (

@@ -13,7 +13,7 @@ const Comments = (props) => {
     return (
         <div className="comments_cotainer">
             <h3 className="h3">Comments #{props.comments && props.index}</h3>
-            {props.comments && props.comments.map((c, index) =>
+            {props.comments && props.comments.map((com, index) =>
                 <div key={index}>
                     <div className="container px-3" >
                         <div className="row p-2">
@@ -21,7 +21,7 @@ const Comments = (props) => {
                                 <div className="avatar" />
                             </div>
                             <div className="col-10 px-2" >
-                                <p>{c}</p>
+                                <p>{com}</p>
                             </div>
                         </div>
                     </div>

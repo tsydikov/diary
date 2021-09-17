@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import useLocalStorage from 'use-local-storage';
 
 const Comments = (props) => {
-    const [com, setCom] = useState('')
+    const [com, setCom] = useLocalStorage("com", '')
     const press = (e) => {
         if (e.keyCode === 13) {
             if (e.ctrlKey) {

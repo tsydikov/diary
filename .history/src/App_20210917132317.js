@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./UI/Navbar/Navbar";
 import './styles/App.css'
 import Items from "./components/Items";
@@ -13,7 +13,7 @@ function App() {
     { id: 3, title: 'Regular item', comments: [1, 2, 3] },
     { id: 4, title: 'Regular item', comments: [1, 2] },
   ])
-  const [comments, setComments] = useLocalStorage("comments", null)
+  const [comments, setComments] = useState( null)
   const [index, setIndex] = useLocalStorage("index", null)
 
   const createItem = (newItem) => {
@@ -30,7 +30,8 @@ function App() {
   const createComment = (newComment, index) => {
     items[index - 1].comments.push(newComment)
     setItems([...items])
-    setComments([...items[index - 1].comments])
+    // setComments(items[index - 1].comments)
+    showComments(index)
   }
 
   return (
